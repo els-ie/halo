@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+# Make all views with an app-id that starts with "float" and title "foo" start floating.
+riverctl rule-add -title "Open File" float
+riverctl rule-add -title "Open Folder" float
+riverctl rule-add -title "*references*" float
+riverctl rule-add -title "*wants to open*" float
+riverctl rule-add -title "*wants to save*" float
+riverctl rule-add -title "All Files" float
+
+# Make all views with app-id "bar" and any title use client-side decorations
+riverctl rule-add -app-id 'bar' csd
+
+riverctl set-cursor-warp on-focus-change
