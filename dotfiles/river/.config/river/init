@@ -1,0 +1,41 @@
+#!/usr/bin/sh
+# elsie~ 2025
+# river init
+
+# Env
+riverctl spawn "dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS SEATD_SOCK DISPLAY WAYLAND_DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP=river"
+
+# Exit river
+riverctl map normal Super+Shift E exit
+
+# Source config files
+RIVERDIR=/home/elsie/.config/river
+
+. $RIVERDIR/init.d/theme
+. $RIVERDIR/init.d/layout
+. $RIVERDIR/init.d/map
+. $RIVERDIR/init.d/rules
+
+# Kitty
+riverctl map normal Super Return spawn kitty
+# Fuzzel
+riverctl map normal Super Space spawn "fuzzel || pkill fuzzel"
+# LG
+riverctl map normal Alt Insert spawn looking-glass-client -F
+# Display settings
+riverctl spawn "wlr-randr --output DP-1 --custom-mode 3840x2160@144Hz --pos 1920,600 --preferred --scale 1.5"
+riverctl spawn "wlr-randr --output DP-2 --custom-mode 1920x1080@120Hz --pos 0,0"
+
+#Use server side decoration
+riverctl rule-add ssd
+
+riverctl hide-cursor when-typing enabled
+riverctl set-cursor-warp on-focus-change
+
+# Spawn windows on bottom
+riverctl attach-mode bottom
+
+waybar
+mako
+riverctl spawn "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+clipse -listen

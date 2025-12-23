@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+
+# Set background and border color
+riverctl xcursor-theme 'Bibata' 24
+riverctl background-color 0x002b36
+riverctl border-color-focused 0x93a1a1
+riverctl border-color-unfocused 0x586e75
+riverctl spawn "swaybg -o DP-1 -m fit -i $HOME/picurte/wallpapers/5.jpg"
+riverctl spawn "swaybg -o DP-2 -m fit -i $HOME/picurte/wallpapers/4.png"

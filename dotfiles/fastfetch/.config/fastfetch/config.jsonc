@@ -1,0 +1,44 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "~/.config/fastfetch/rakka.png",
+    "width": 38,
+    "position": "right",
+    "preserveAspectRatio": true,
+    "padding": {
+      "top": 1,
+      "right": 2
+    }
+  },
+  "display": {
+    "separator": " ⊹  ",
+    "color": {
+      "separator": "cyan"
+    }
+  },
+  "modules": [
+    "break",
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "wm",
+    "terminal",
+    "terminalfont",
+    "keyboard",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "break",
+    "colors",
+    "wallpaper",
+    "break",
+    "break"
+  ]
+}
