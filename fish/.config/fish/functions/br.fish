@@ -1,1 +1,0 @@
-/home/elsie/.local/share/broot/launcher/fish/br.fish
