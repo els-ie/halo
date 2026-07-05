@@ -1,0 +1,50 @@
+##   blushforever   ##
+##     by elsie     ##
+
+foreground  #f1ebef
+background  #171c19
+cursorcolor #fbf5f9
+
+# black
+black00 #232d2b
+black01 #2d3735
+black02 #37413f
+black03 #414b49
+# white
+white00 #a9b9ac
+white01 #bccabe
+white02 #d7e6db
+white03 #ebf1ed
+# red
+red00 #ed6b7d
+red01 #f18095
+# green
+green00 #9be980
+green01 #b8eaaf
+# lime
+lime00 #d4eb73
+lime01 #e5ebb5
+# tangerine
+tangerine00 #fc9d6f
+tangerine01 #fab99f
+# yellow
+yellow00 #fcc36f
+yellow01 #fad69d
+# blue
+blue00 #94a0f1
+blue01 #afbeed
+# light blue
+lightblue00  #80c5e8
+lightblueb01 #b4e2fa
+# pink
+pink00 #eea1A9
+pink01 #ffc8db
+# lilac
+lilac00 #bfa1ee
+lilac01 #d2c3fb
+# mint
+mint00 #93e4aa
+mint01 #b6efc6
+# cyan
+cyan00 #9cefd3
+cyan01 #b6efda
