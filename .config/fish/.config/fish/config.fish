@@ -10,3 +10,7 @@ if status is-interactive
     bass source /etc/profile
     bass source $HOME/.bash_profile
 end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

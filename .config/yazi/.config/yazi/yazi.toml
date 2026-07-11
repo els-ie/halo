@@ -28,7 +28,10 @@ image_alloc = 1073741824 # = 1024*1024*1024 = 1024MB
 [open]
 rules = [
   # Use "nvim" for all plain text files
-  { mime = "text/*", use = "nvim" },
+  { mime = "text/*", use = "edit" },
   # Use "firefox-bin" for HTML pages
   { name = "*.html", use = "firefox-bin" },
 ]
+
+[opener]
+edit = [{ run = 'nvim "$@"', block = true, desc = "Edit with Neovim" }]

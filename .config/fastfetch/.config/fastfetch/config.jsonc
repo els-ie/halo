@@ -30,8 +30,7 @@
     },
     {
       "type": "kernel",
-      "key": "Kernel",
-      "format": "linux-7.1.1-cachyos"
+      "key": "Kernel"
     },
     "uptime",
     "packages",
